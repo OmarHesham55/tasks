@@ -47,26 +47,11 @@ $("#loginForm").on("submit",function (e){
             console.log("AJAX error",status,error);
         }
     });
+});
 
-
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+$("#register-Btn").on("click",function (){
+   window.location.href = "register.php";
+});
 
 
 

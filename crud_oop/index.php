@@ -1,3 +1,9 @@
+<?php
+
+require_once 'config/Database.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="ar">
 <head>
@@ -14,6 +20,16 @@
     <button class="btn btn-secondary mx-2"  type="button" id="register">Register</button>
 </div>
 
+<div>
+    <?php
+    $conn = new Database();
+    $db = $conn->getConnect();
+    if($db)
+    {
+        echo "Connected successfully";
+    }
+    ?>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/home.js"></script>

@@ -16,7 +16,7 @@
 </head>
 <body>
 <div class="d-flex justify-content-center align-items-center vh-100">
-    <div class="register-container">
+    <div class="login-container">
         <h1 class="text-center mb-4">Login</h1>
         <form id="loginForm">
             <div class="mb-3">
@@ -28,7 +28,8 @@
                 <input type="password" class="form-control" id="password" placeholder="Enter your password" name="password" required>
             </div>
             <div class="d-grid">
-                <button type="submit" class="btn btn-register" id="loginBtn">Login</button>
+                <button type="submit" class="btn login-btn" id="loginBtn">Login</button>
+                <button type="button" class="btn register-btn my-2" id="register-Btn">Register</button>
             </div>
         </form>
     </div>

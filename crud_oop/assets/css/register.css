@@ -20,6 +20,16 @@ body {
 .btn-register:hover {
     background-color: #0056b3;
 }
+
+.btn-login {
+    background-color: #959596;
+    border: none;
+    transition: background-color 0.3s;
+}
+.btn-login:hover {
+    background-color: #6e6e6e;
+}
+
 h1 {
     font-weight: bold;
     color: #343a40;

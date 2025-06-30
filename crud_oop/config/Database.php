@@ -6,19 +6,22 @@ private $username = "root";
 private $password = "";
 public $conn;
 
+
+public function __construct()
+{
+    try {
+        $this->conn = new PDO($this->dsn,$this->username,$this->password);
+        $this->conn->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+    }
+    catch (PDOException $e)
+    {
+        die("Connection failed " . $e->getMessage());
+    }
+}
     public function getConnect()
     {
-        $this->conn = null;
+        return $this->conn;
 
-        try {
-            $this->conn = new PDO($this->dsn,$this->username,$this->password);
-            $this->conn->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-            return $this->conn;
-        }
-        catch (PDOException $e)
-        {
-            die("Connection failed " . $e->getMessage());
-        }
     }
 
 }

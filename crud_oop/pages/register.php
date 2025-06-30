@@ -33,6 +33,7 @@
             </div>
             <div class="d-grid">
                 <button type="submit" class="btn btn-register" id="register">Register</button>
+                <button type="button" class="btn btn-login my-2" id="login-btn">Login</button>
             </div>
         </form>
     </div>
