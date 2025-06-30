@@ -1,0 +1,26 @@
+body {
+    background-color: #f8f9fa;
+}
+.register-container {
+    max-width: 500px;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.btn-register {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s;
+}
+.btn-register:hover {
+    background-color: #0056b3;
+}
+h1 {
+    font-weight: bold;
+    color: #343a40;
+}
